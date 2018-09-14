@@ -3,4 +3,13 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">Namaste!</string>
     <string name="ButtonText">I\'m a Button</string>
+    <string name="TextView">Login</string>
+    <string name="EditText">Name</string>
+    <string name="password">Password</string>
+    <string name="Flag">Canada Flag</string>
+    <string name="RadioButton">RadioButton</string>
+    <string name="CheckBox">CheckBox</string>
+    <string name="Switch">What does this do?</string>
+    <string name="CameraIcon">Image Button to capture images</string>
+
 </resources>
