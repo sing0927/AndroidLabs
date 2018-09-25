@@ -1,53 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="2"
     tools:context=".ListItemsActivity">
 
-
-    <android.support.v7.widget.GridLayout
-        android:layout_width="match_parent"
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:columnCount="2"
-        app:rowCount="2">
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:text="@string/RadioButton"
+        android:layout_gravity="fill" />
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="fill"
-            android:text="@string/RadioButton"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:text="@string/CheckBox"
+        android:layout_gravity="fill" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="fill"
-            android:text="@string/CheckBox"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill" />
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="fill"
+        android:text="@string/Switch"
+        app:layout_columnWeight="1"
+        android:layout_gravity="fill" />
 
-        <Switch
-            android:id="@+id/Switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="fill"
-            android:text="@string/Switch"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ImageButton"
+        android:text="@string/ImageButton"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_columnWeight="1"
+        android:layout_gravity="fill" />
+</GridLayout>
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:contentDescription="@string/ImageButton"
-            android:contentDescription="@string/CameraIcon"
-            android:src="@android:drawable/ic_menu_camera"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
-    </android.support.v7.widget.GridLayout>
-</android.support.constraint.ConstraintLayout>
+
