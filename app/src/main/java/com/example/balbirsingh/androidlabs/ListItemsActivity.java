@@ -29,7 +29,7 @@ public class ListItemsActivity extends Activity {
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private CharSequence text = "Switch is On";
     private CharSequence text1 = "Switch is Off";
-    private ImageButton button;
+    private ImageButton CameraButton;
     private Switch switch1;
     private CheckBox checkbox;
     private int requestCode;
@@ -44,8 +44,8 @@ public class ListItemsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
 
-        button = (ImageButton)findViewById(R.id.imageButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        CameraButton = (ImageButton)findViewById(R.id.imageButton);
+        CameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -110,30 +110,35 @@ public class ListItemsActivity extends Activity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            button.setImageBitmap(imageBitmap);
+            CameraButton.setImageBitmap(imageBitmap);
         }
     }
-        protected void OnResume(Bundle savedInstance){
-       super.onResume();
+    @Override
+    protected void onResume() {
+        super.onResume();
         Log.i(ACTIVITY_NAME, "In onResume()");
-
-
     }
-    protected void onStart(Bundle savedInstance) {
+
+    @Override
+    protected void onStart() {
         super.onStart();
         Log.i(ACTIVITY_NAME, "In onStart()");
     }
 
-    protected void onPause(Bundle savedInstance) {
+    @Override
+    protected void onPause() {
         super.onPause();
         Log.i(ACTIVITY_NAME, "In onPause()");
     }
 
-    protected void onStop(Bundle savedInstance) {
+    @Override
+    protected void onStop() {
         super.onStop();
         Log.i(ACTIVITY_NAME, "In onStop()");
     }
-    protected void onDestroy(Bundle savedInstance) {
+
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }

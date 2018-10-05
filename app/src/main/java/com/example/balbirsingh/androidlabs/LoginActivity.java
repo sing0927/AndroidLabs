@@ -15,7 +15,7 @@ import android.widget.EditText;
 public class LoginActivity extends Activity {
     private static final String ACTIVITY_NAME = "LoginActivity";
 
-    private Button button;
+    private Button loginButton;
     private EditText loginEditText;
     private SharedPreferences sharedPref;
 
@@ -31,8 +31,8 @@ public class LoginActivity extends Activity {
         loginEditText = findViewById(R.id.login_editText);
         loginEditText.setText(defaultEmail);
 
-        button = (Button)findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener() {
+        loginButton = (Button)findViewById(R.id.LoginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -48,29 +48,32 @@ public class LoginActivity extends Activity {
         });
 
     }
-
-    public void callback(){
-
-    }
-    protected void OnResume(Bundle savedInstance){
+    @Override
+    protected void onResume() {
         super.onResume();
         Log.i(ACTIVITY_NAME, "In onResume()");
     }
-    protected void onStart(Bundle savedInstance) {
+
+    @Override
+    protected void onStart() {
         super.onStart();
         Log.i(ACTIVITY_NAME, "In onStart()");
     }
 
-    protected void onPause(Bundle savedInstance) {
+    @Override
+    protected void onPause() {
         super.onPause();
         Log.i(ACTIVITY_NAME, "In onPause()");
     }
 
-    protected void onStop(Bundle savedInstance) {
+    @Override
+    protected void onStop() {
         super.onStop();
         Log.i(ACTIVITY_NAME, "In onStop()");
     }
-    protected void onDestroy(Bundle savedInstance) {
+
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }

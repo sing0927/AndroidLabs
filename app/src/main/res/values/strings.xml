@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab3</string>
+    <string name="app_name">Lab4</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a Button</string>
     <string name="TextView">Login</string>
@@ -12,9 +12,15 @@
     <string name="Switch">What does this do?</string>
     <string name="ImageButton">Image Button to capture images</string>
     <string name="dialog_message">Are you sure you want to finish this activity? </string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="dialog_title">Finish</string>
     <string name="cancel">Cancel</string>
-
+    <string name="Button2">Start Chat</string>
+    <string name="EditText1">write something</string>
+    <string name="Send">send message</string>
+    <string name="TextView5">New Text</string>
+    <string name="ImageView3">New Text</string>
+    <string name="TextView6">New Text</string>
+    <string name="ImageView5">New Text3</string>
 
 </resources>

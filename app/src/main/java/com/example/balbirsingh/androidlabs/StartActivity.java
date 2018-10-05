@@ -10,7 +10,8 @@ import android.widget.Toast;
 
 public class StartActivity extends Activity {
     private static final String ACTIVITY_NAME = "LoginActivity";
-    private Button button;
+    private Button ImButton;
+    private Button StartChat;
     private int requestCode;
 
 
@@ -18,8 +19,8 @@ public class StartActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        ImButton = (Button) findViewById(R.id.MeButton);
+        ImButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
@@ -27,7 +28,14 @@ public class StartActivity extends Activity {
 
             }
         });
-
+        StartChat = (Button)findViewById(R.id.ChatStart);
+        StartChat.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent secondIntent = new Intent(StartActivity.this,ChatWindow.class);
+               startActivityForResult(secondIntent, 50);
+           }
+       });
 
     }
 
@@ -45,29 +53,32 @@ public class StartActivity extends Activity {
 
     }
 
-    protected void OnResume(Bundle savedInstance) {
+    @Override
+    protected void onResume() {
         super.onResume();
         Log.i(ACTIVITY_NAME, "In onResume()");
     }
 
-    protected void onStart(Bundle savedInstance) {
+    @Override
+    protected void onStart() {
         super.onStart();
         Log.i(ACTIVITY_NAME, "In onStart()");
     }
 
-    protected void onPause(Bundle savedInstance) {
+    @Override
+    protected void onPause() {
         super.onPause();
         Log.i(ACTIVITY_NAME, "In onPause()");
-
     }
 
-    protected void onStop(Bundle savedInstance) {
+    @Override
+    protected void onStop() {
         super.onStop();
         Log.i(ACTIVITY_NAME, "In onStop()");
-
     }
 
-    protected void onDestroy(Bundle savedInstance) {
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }

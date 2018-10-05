@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-<string name="app_name">Lab3</string>
-<string name="hello_message">नमस्ते दुनिया!</string>
-<string name="ButtonText">मैं एक बटन हूँ</string>
-<string name="TextView">लॉग इन करें</string>
-<string name="EditText">ईमेल</string>
-<string name="password">पारण शब्द</string>
-<string name="button2">लॉग इन करें</string>
-<string name="flag">झंडा</string>
-<string name="RadioButton">रेडियो बटन</string>
-<string name="CheckBox">चेक बॉक्स</string>
-<string name="Switch">यह क्या करता है?</string>
-<string name="CameraIcon">छवियों को पकड़ने के लिए छवि बटन</string>
-    <string name="dialog_message">Switch is On </string>
-    <string name="ok">Click ok</string>
-    <string name="dialog_title">You want to exit</string>
-    <string name="cancel">Click Cancel</string>
+    <resources>
+    <string name="app_name">Lab4</string>
+    <string name="hello_message">नमस्ते दुनिया!</string>
+    <string name="ButtonText">मैं एक बटन हूँ</string>
+    <string name="TextView">लॉग इन करें</string>
+    <string name="EditText">ईमेल</string>
+    <string name="password">पारण शब्द</string>
+    <string name="button2">लॉग इन करें</string>
+    <string name="flag">झंडा</string>
+    <string name="RadioButton">रेडियो बटन</string>
+    <string name="CheckBox">चेक बॉक्स</string>
+    <string name="Switch">यह क्या करता है?</string>
+    <string name="CameraIcon">छवियों को पकड़ने के लिए छवि बटन</string>
+    <string name="dialog_message">क्या आप वाकई इस गतिविधि को खत्म करना चाहते हैं? </string>
+    <string name="ok">ठीक</string>
+    <string name="dialog_title">समाप्त</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="Button2">बातचीत शुरू कीजिए</string>
+    <string name="EditText1">कुछ लिखो</string>
+    <string name="Send">मेसेज भेजें</string>
+    <string name="TextView5">New Text</string>
+    <string name="ImageView3">New Text</string>
+    <string name="TextView6">New Text</string>
+    <string name="ImageView5">New Text3</string>
 
 </resources>
